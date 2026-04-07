@@ -1,0 +1,14 @@
+name: 11-Matrix
+on:
+  push:
+    - matrix
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [16,18,20]
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Node ${{ matrix.node }}"
+💡 GH-200: Parallel execution
