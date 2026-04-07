@@ -1,5 +1,7 @@
 name: 05-Node-CI
-on: [push]
+on:
+  push:
+    branches: [node]
 
 jobs:
   node:

@@ -1,6 +1,7 @@
 name: 04-Path-Filter
 on:
   push:
+    branches: [main]
     paths:
       - 'src/**'
 
