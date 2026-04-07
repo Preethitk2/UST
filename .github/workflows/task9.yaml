@@ -1,0 +1,13 @@
+name: 09-Env
+on:
+  push:
+    branch: 
+      - env
+
+jobs:
+  env:
+    runs-on: ubuntu-latest
+    env:
+      APP: demo
+    steps:
+      - run: echo $APP

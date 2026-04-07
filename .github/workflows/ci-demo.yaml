@@ -1,10 +1,10 @@
 name: Demo
- 
+
 on:
   push:
     branch:
       - main
- 
+
 jobs:
   build:
     runs-on: ubuntu-latest
